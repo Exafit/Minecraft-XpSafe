@@ -1,0 +1,5 @@
+#xp_message-Datei
+
+#gibt jede sek eine nachricht an alle spieler auf einer Xp einzahl / auszahl fläche mit aktuellem kontostand
+execute as @a[tag=xps_einzahlen] run tellraw @s ["",{"text":"Du hast ","color":"green"},{"score":{"name":"@s","objective":"xps_safe_level"},"color":"green","bold":true},{"text":" Xp-Level und ","color":"green","bold":false},{"score":{"name":"@s","objective":"xps_safe_total"},"color":"green","bold":true},{"text":" Xp-Punkte auf deinem Konto.","color":"green","bold":false}]
+execute as @a[tag=xps_auszahlen] run tellraw @s ["",{"text":"Du hast ","color":"green"},{"score":{"name":"@s","objective":"xps_safe_level"},"color":"green","bold":true},{"text":" Xp-Level und ","color":"green","bold":false},{"score":{"name":"@s","objective":"xps_safe_total"},"color":"green","bold":true},{"text":" Xp-Punkte auf deinem Konto.","color":"green","bold":false}]
